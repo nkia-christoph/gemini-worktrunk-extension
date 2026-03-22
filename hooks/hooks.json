@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "SessionStart": [{ "matcher": "*", "hooks": [{ "name": "wt-start", "type": "command", "command": "${extensionPath}/hooks/start.sh" }] }],
+    "SessionEnd": [{ "matcher": "*", "hooks": [{ "name": "wt-end", "type": "command", "command": "${extensionPath}/hooks/end.sh" }] }],
+    "BeforeTool": [{ "matcher": "*", "hooks": [{ "name": "wt-tool-start", "type": "command", "command": "${extensionPath}/hooks/tool-start.sh" }] }],
+    "AfterTool": [{ "matcher": "*", "hooks": [{ "name": "wt-tool-end", "type": "command", "command": "${extensionPath}/hooks/tool-end.sh" }] }],
+    "AfterModel": [{ "matcher": "*", "hooks": [{ "name": "wt-status", "type": "command", "command": "${extensionPath}/hooks/status-update.sh" }] }]
+  }
+}
